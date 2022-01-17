@@ -1,3 +1,6 @@
+const pokemonRouter = require('./pokemon');
 const router = require('express').Router();
 
-module.exports = router;
+router.use('/pokemon', pokemonRouter);
+
+module.exports = { router };
